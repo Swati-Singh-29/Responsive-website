@@ -1,0 +1,331 @@
+header{
+    width: 100%;
+    height: 100vh;
+    position:relative;
+}
+
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 70px;
+}
+
+.logo{
+    font-size: 43px;
+    color:grey;
+    font-weight: bold;
+}
+
+.menu a{
+    font-size: 30px;
+    
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    color:black;
+
+}
+
+.menu a:hover{
+   color: blue;
+}
+
+.circle{
+    width: 400px;
+    height: 400px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    right:10%; 
+    z-index: -1;  
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.left {
+    flex-basis: 60%;
+    max-width: 600px;
+}
+
+.right {
+    flex-basis: 20%;
+    text-align: right;
+}
+.right img{
+    width: 132%;
+}
+
+.left h1 {
+    font-size: 50px;
+
+}
+.left span{
+    color:rgb(238, 183, 229);
+}
+
+.para{
+    font-size: 22px;
+    color: goldenrod;
+}
+
+.btn{
+    margin-top: 30px;
+    width: 63%;
+    height: 60px;
+    padding: 7px;
+    display: flex;
+}
+.btn input{
+    width: 106%;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    outline: none;
+}
+
+
+
+.btn button{
+   
+    padding: 8px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(238, 183, 229);
+    outline: none;
+    border: none;
+    width: 36%;
+    margin-inline: 3px;
+}
+
+.counter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-inline-start: -49px;
+    margin-inline-end: 184px;
+    margin-top: 30px;
+}
+
+#featured{
+    padding: 100px 50pxs;
+}
+
+.feature-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.feature-left{
+    flex-basis: 50%;
+}
+
+.feature-left img{
+    width:80%;
+}
+.feature-right{
+    flex-basis: 50%;
+    max-width: 500px;
+}
+
+.feature-right h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.feature-right p{
+    margin: 20px 0px;
+    color: rgb(69, 123, 123);
+}
+
+.c-btn{
+    background: none;
+    padding: 10px;
+    border: 1px solid brown;
+    outline: none;
+    color: black;
+    border-radius: 10%;
+}
+
+#featured2{
+
+    margin-top: 50px;
+    padding: 100px 50pxs;
+}
+
+.feature-row2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 200px;
+}
+
+.feature-left2{
+    flex-basis: 50%;
+}
+
+.feature-left2 img{
+    width:80%;
+}
+.feature-right2{
+    flex-basis: 50%;
+    max-width: 500px;
+}
+
+.feature-right2 h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.feature-right2 p{
+    margin: 20px 0px;
+    color: rgb(69, 123, 123);
+}
+
+#selling{
+    padding: 200px;
+    
+}
+#selling h1{
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+.sell-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+.sell-box{
+    flex-basis: 25%;
+}
+.sell-box img{
+    width: 100%;
+}
+ #selling h2{
+
+    text-align: center;
+    color:saddlebrown;
+    margin-bottom: 20px;
+}
+
+.sell-box > div{
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.footer-row{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-row p{
+    color:grey;
+    margin: 10px 0px;
+}
+/*----------------------------------------------------*/
+
+@media (max-width:770px)
+{
+    .menu{
+        display: none;
+    }
+    
+    
+
+    .left{
+        flex-basis: 100%;
+        margin:50px 100px;
+    }
+
+    .left h1{
+        
+            margin: -9px -6px;
+            
+            margin-bottom: 10px;
+            font-size: 33px;
+            margin-block-start: -81px;
+            margin-inline-start: 87px;
+        }
+    .para{
+        display: flex;
+        flex-wrap: wrap;
+        margin-inline-start: 83px;
+        font-size: 18px;
+    }
+
+    .right{
+        display: none;
+    }
+
+    .btn input{
+        width: 154%;
+        margin-inline-start: 77px;
+        
+    }
+    .btn button{
+        width: 46%;
+        margin-inline-end: -115px;
+    }
+
+    .counter{
+
+        display: none;
+
+    }
+
+    .feature-left{
+        flex-basis: 100%;
+    }
+
+
+    .feature-left img{
+        width:100%;
+    }
+   
+    .feature-right{
+        flex-basis: 100%;
+    }
+
+
+    .feature-left2{
+        flex-basis: 100%;
+    }
+
+    .feature-left2 img{
+        width:100%;
+    }
+    .feature-right2{
+        flex-basis: 100%;
+    }
+
+    
+
+    .sell-box img{
+        width: 717%;
+        margin-inline-start: -151px
+    }
+
+    #selling h2{
+        margin-inline-start: -48px;
+    }
+
+    .footer-row > div{
+        flex-basis: 50%;
+    }
+
+}
